@@ -2,6 +2,9 @@
 
 We build a controller for a Masterbuilt Electronic Smoker with the Commodore 64.
 
-![mainmenu](https://github.com/cityxen/RelayTracker/blob/master/commodore64/screenshots/relay_tracker-image-actual-v2.0-1-tn.png)
+![mainmenu](https://github.com/cityxen/C64_Meat_Smoker/blob/master/screenshots/mainmenu.png)
+![running](https://github.com/cityxen/C64_Meat_Smoker/blob/master/screenshots/running.png)
+![done](https://github.com/cityxen/C64_Meat_Smoker/blob/master/screenshots/done.png)
+
 
 FULL VIDEO COMING SOON!
