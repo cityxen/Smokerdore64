@@ -52,23 +52,31 @@
  2040 if ft < ctmp then heat = 1
  2999 return
  3000 print"{home}":rem ******* update screen
- 3001 print "{wht}{$a0}cityxen meat smoker controller (c)2020"
+ 3001 print"{yel}       smokerdore 64 v1.0 (c) 2020{wht}"
  3002 print "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC"
  3003 print " press f1 to toggle light"
  3004 print " press +/- to fine tune temperature"
+ 3005 h$=left$(ti$,2)
  3009 print "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC"
- 3030 print "{gry3}timer    {wht}:{gry3} ";ti$
- 3035 print "{yel}esecs    {wht}:{yel}";esecs
- 3100 print "{grn}ctime    {wht}:{grn}";cktm
- 3120 print "{grn}k1       {wht}:{grn}";k1
- 3122 print "{grn}k2       {wht}:{grn}";k2
- 3134 print "{red}res.v    {wht}:{red}";r
- 3138 print "{brn}tmp c    {wht}:{brn}";t
- 3139 print "{brn}tmp f    {wht}:{brn}";ft
- 3140 print "{blu}ctmp     {wht}:{blu}";ctmp
- 3150 print "{lblu}heat     {wht}:{lblu}";heat
- 3200 print "{pur}done     {wht}:{pur}";dun
- 3250 print "{pur}light    {wht}:{pur}";l
+ 3010 m$=mid$(ti$,3,2)
+ 3015 s$=right$(ti$,2)
+ 3020 print
+ 3085 print "       {yel}time smoked  {wht}:{yel} ";h$;":";m$;":";s$
+ 3090 print "       {yel}elapsed secs {wht}:{yel}";esecs
+ 3100 print "       {yel}cook time    {wht}:{yel}";cktm
+ 3105 print "       {wht}CCCCCCCCCCCCCCCCCCCCCCCCC"
+ 3120 print "       {grn}k1 tmp sensor{wht}:{grn}";k1
+ 3122 print "       {grn}k2 tmp sensor{wht}:{grn}";k2
+ 3134 print "       {grn}tmp resistnce{wht}:{grn}";r
+ 3135 print "       {wht}CCCCCCCCCCCCCCCCCCCCCCCCC"
+ 3138 print "       {lblu}tmp celsius  {wht}:{lblu}";t
+ 3139 print "       {lblu}tmp farenht  {wht}:{lblu}";ft
+ 3140 print "       {lblu}cook tmp (f) {wht}:{lblu}";ctmp
+ 3145 print "       {wht}CCCCCCCCCCCCCCCCCCCCCCCCC"
+ 3150 print "       {lred}heat         {wht}:{lred}";heat
+ 3220 print "       {lred}light        {wht}:{lred}";l
+ 3230 print "       {wht}CCCCCCCCCCCCCCCCCCCCCCCCC"
+ 3250 print "       {cyn}done         {wht}:{cyn}";dun
  3500 return
  4000 rem ********* update done status
  4005 if(ti$<>lti$) then lti$=ti$:esecs=esecs+1
@@ -77,8 +85,8 @@
  7000 rem done cooking! sound alarm
  7002 mt$=ti$
  7005 heat=0:gosub30000
- 7010 print "{clr}{grn}{down}{down}"
- 7015 print "{$a0}cityxen meat smoker controller (c)2020"
+ 7010 print "{clr}{grn}"
+ 7015 print"{yel}       smokerdore 64 v1.0 (c) 2020{wht}"
  7016 print "{down}{lred}   {rvon}heating element has been turned off{grn}":print
  7020 print "      {CBM-D}{CBM-I}{CBM-I}{CBM-I}{CBM-F}  {CBM-D}{CBM-I}{CBM-I}{CBM-I}{CBM-F} {CBM-D}{CBM-I}  {CBM-I}  {CBM-D}{CBM-I}{CBM-I}{CBM-I}  {CBM-I}"
  7030 print "       {rvon} {rvof}  {rvon} {rvof}  {rvon} {rvof}   {rvon} {rvof}  {rvon} {rvof}{CBM-B} {rvon} {rvof}  {rvon} {rvof}     {rvon} {rvof}  "
