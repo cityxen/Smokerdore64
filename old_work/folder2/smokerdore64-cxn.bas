@@ -19,8 +19,8 @@
  1010 rem main menu keyboard loop
  1020 get a$:if a$="" then 1020
  1030 ifa$="1"thengosub20000:goto1500
- 1035 ifa$="2"thengosub20200:goto1500
- 1040 ifa$="3"thengosub20100:goto1500
+ 1035 ifa$="2"thengosub20100:goto1500
+ 1040 ifa$="3"thengosub20200:goto1500
  1050 ifa$="4"thengosub20300:goto1500
  1060 ifa$="5"thengosub20400:goto1500
  1062 ifa$="0"thengosub20500:goto1500
