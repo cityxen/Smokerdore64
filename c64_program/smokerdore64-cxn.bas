@@ -37,6 +37,7 @@
  1591 ifa$="+"thenk1=k1+10
  1592 ifa$="-"thenk1=k1-10
  1593 ifa$="{f7}"thengosub30200
+ 1594 ifa$="s"thengosub30200:goto1000
  1990 gosub 2000:rem read temp
  1995 gosub 3000:rem print screen
  1996 gosub 4000
@@ -51,12 +52,13 @@
  2035 heat=0
  2040 if ft < ctmp then heat = 1
  2999 return
- 3000 print"{home}":rem ******* update screen
+ 3000 print"{home}";:rem ******* update screen
  3001 print"{yel}       smokerdore 64 v1.0 (c) 2020{wht}"
  3002 print "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC"
- 3003 print " press f1 to toggle light"
- 3004 print " press +/- to fine tune temperature"
- 3005 h$=left$(ti$,2)
+ 3003 print "      {rght} {rvon}f1{rvof}  to toggle light""
+ 3004 print "        {rvon}+{rvof}/{rvon}-{rvof} to fine tune temperature"
+ 3005 print "        {rvon}s{rvof}   to stop smoke session"
+ 3006 h$=left$(ti$,2)
  3009 print "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC"
  3010 m$=mid$(ti$,3,2)
  3015 s$=right$(ti$,2)
@@ -64,7 +66,11 @@
  3085 print "       {yel}time smoked  {wht}:{yel} ";h$;":";m$;":";s$
  3090 print "       {yel}elapsed secs {wht}:{yel}";esecs
  3100 print "       {yel}cook time    {wht}:{yel}";cktm
- 3105 print "       {wht}CCCCCCCCCCCCCCCCCCCCCCCCC"
+ 3101 h2$=str$(cktm/60/60)
+ 3102 fori=1tolen(h2$):ifmid$(h2$,i,1)="."then goto3110
+ 3103 nexti
+ 3110 print "       {yel}               (";left$(h2$,i+2);" hours )"
+ 3119 print "       {wht}CCCCCCCCCCCCCCCCCCCCCCCCC"
  3120 print "       {grn}k1 tmp sensor{wht}:{grn}";k1
  3122 print "       {grn}k2 tmp sensor{wht}:{grn}";k2
  3134 print "       {grn}tmp resistnce{wht}:{grn}";r
@@ -80,7 +86,7 @@
  3500 return
  4000 rem ********* update done status
  4005 if(ti$<>lti$) then lti$=ti$:esecs=esecs+1
- 4010 if val(ti$) >= cktm then dun = 1
+ 4010 if esecs >= cktm then dun = 1
  4199 return
  7000 rem done cooking! sound alarm
  7002 mt$=ti$
