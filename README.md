@@ -10,6 +10,7 @@ Full video here: https://www.youtube.com/watch?v=52KUTNKGaqk
 ![running](https://github.com/cityxen/Smokerdore64/blob/master/screenshots/running.png)
 ![done](https://github.com/cityxen/Smokerdore64/blob/master/screenshots/done.png)
 
-![mes1](https://github.com/cityxen/Smokerdore64/blob/master/images/1.png)
-![programming](https://github.com/cityxen/Smokerdore64/blob/master/images/2.png)
-![temptest](https://github.com/cityxen/Smokerdore64/blob/master/images/3.png)
+![mes1](https://github.com/cityxen/Smokerdore64/blob/master/images/1.jpg)
+![programming](https://github.com/cityxen/Smokerdore64/blob/master/images/2.jpg)
+![temptest](https://github.com/cityxen/Smokerdore64/blob/master/images/3.jpg)
+
