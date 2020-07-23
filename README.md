@@ -16,3 +16,5 @@ Full video here: https://www.youtube.com/watch?v=52KUTNKGaqk
 ![programming](https://github.com/cityxen/Smokerdore64/blob/master/images/2.jpg)
 ![temptest](https://github.com/cityxen/Smokerdore64/blob/master/images/3.jpg)
 
+![ribs](https://github.com/cityxen/Smokerdore64/blob/master/images/5.jpg)
+
