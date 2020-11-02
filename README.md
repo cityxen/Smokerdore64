@@ -1,3 +1,5 @@
+# 🌆🅲🅸🆃🆈🆇🅴🅽☯️ 8 & 16 bit hijinx and programming!
+
 # Smokerdore 64
 
 We build a controller for a Masterbuilt Electronic Smoker with the Commodore 64.
